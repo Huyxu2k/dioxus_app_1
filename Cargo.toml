@@ -13,7 +13,7 @@ members = [
 dioxus = { version = "0.7.1" }
 serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1.52.3", features = ["full"] }
-sqlx = { version = "0.9.0", features = ["runtime-tokio", "tls-rustls", "mysql"]}
+sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-rustls", "mysql"]}
 # workspace
 ui = { path = "packages/ui" }
 api = { path = "packages/api" }
