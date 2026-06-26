@@ -14,6 +14,7 @@ dioxus = { version = "0.7.1" }
 serde = { version = "1.0.228", features = ["derive"] }
 tokio = { version = "1.52.3", features = ["full"] }
 sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-rustls", "mysql"]}
+dioxus-radio = "0.7.0"
 # workspace
 ui = { path = "packages/ui" }
 api = { path = "packages/api" }

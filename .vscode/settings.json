@@ -1,15 +1,15 @@
-{
-  // 1. Bật tất cả các tính năng của các crate trong Workspace
-    "rust-analyzer.cargo.allFeatures": true,
+// {
+//   // 1. Bật tất cả các tính năng của các crate trong Workspace
+//     "rust-analyzer.cargo.allFeatures": true,
 
-    // 2. Tự động kiểm tra code cho tất cả các target (Web, Desktop, Server)
-    "rust-analyzer.cargo.target": "all",
+//     // 2. Tự động kiểm tra code cho tất cả các target (Web, Desktop, Server)
+//     "rust-analyzer.cargo.target": "all",
 
-    // 3. Đảm bảo rust-analyzer quét qua toàn bộ các project con trong workspace
-    "rust-analyzer.linkedProjects": [
-        "Cargo.toml"
-    ],
+//     // 3. Đảm bảo rust-analyzer quét qua toàn bộ các project con trong workspace
+//     "rust-analyzer.linkedProjects": [
+//         "Cargo.toml"
+//     ],
 
-    // 4. Cho phép tự động chạy 'cargo check' để bắt lỗi chính xác
-    "rust-analyzer.check.command": "check"
-}
+//     // 4. Cho phép tự động chạy 'cargo check' để bắt lỗi chính xác
+//     "rust-analyzer.check.command": "check"
+// }
