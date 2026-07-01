@@ -5,8 +5,6 @@ members = [
     "packages/web",
     "packages/desktop",
     "packages/mobile",
-    "packages/api", 
-    "packages/shared",
 ]
 
 [workspace.dependencies]
@@ -17,5 +15,3 @@ sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-rustls", "mysql"]}
 dioxus-radio = "0.7.0"
 # workspace
 ui = { path = "packages/ui" }
-api = { path = "packages/api" }
-shared ={ path = "packages/shared"}
