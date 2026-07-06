@@ -1,4 +1,5 @@
 use dioxus::prelude::*;
+use crate::server::echo;
 
 const ECHO_CSS: Asset = asset!("/assets/styling/echo.css");
 
@@ -14,7 +15,7 @@ pub fn Echo() -> Element {
             input {
                 placeholder: "Type here to echo...",
                 oninput: move |event| async move {
-                    let data = api::functions::echo(event.value()).await.unwrap();
+                    let data = echo(event.value()).await.unwrap();
                     response.set(data);
                 },
             }

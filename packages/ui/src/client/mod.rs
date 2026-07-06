@@ -9,7 +9,7 @@ use pages::{Blog, Home};
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
-enum Route {
+pub enum Route {
     #[layout(WebNavbar)]
     #[route("/")]
     Home {},

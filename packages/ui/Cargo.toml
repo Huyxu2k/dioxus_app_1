@@ -3,10 +3,11 @@ name = "ui"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+default = []
+server = ["dioxus/server"]
+
+
 [dependencies]
 dioxus = { workspace = true }
-api = { workspace = true }
 dioxus-radio  = { workspace = true }
-
-[features]
-server = ["api/server"]
