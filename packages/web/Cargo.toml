@@ -11,4 +11,4 @@ dioxus-radio = { workspace = true }
 [features]
 default = []
 web = ["dioxus/web"]
-server = ["dioxus/server", "ui/server"]
+server = ["ui/server"]
