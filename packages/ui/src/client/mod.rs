@@ -1,6 +1,7 @@
 pub mod app;
 mod pages;
 mod components;
+mod services;
 
 use dioxus::prelude::*;
 
