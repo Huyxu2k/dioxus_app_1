@@ -13,3 +13,15 @@
 //     // 4. Cho phép tự động chạy 'cargo check' để bắt lỗi chính xác
 //     "rust-analyzer.check.command": "check"
 // }
+
+{
+  "tailwindCSS.includeLanguages": {
+    "rust": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    // Bắt các class dạng class: "..." bên trong macro rsx!
+    "class:\\s*\"([^\"]*)\"",
+    // Bắt các class dạng class: "..." kèm modifier như md: flex, hover:bg-blue...
+    "class\\s*:\\s*\"([^\"]*)\""
+  ]
+}
