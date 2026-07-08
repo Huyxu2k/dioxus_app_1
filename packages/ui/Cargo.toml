@@ -6,7 +6,9 @@ edition = "2021"
 [features]
 default = []
 server = ["dioxus/server"]
-
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
 
 [dependencies]
 dioxus = { workspace = true, features = ["router"] }
@@ -20,7 +22,6 @@ sqlx = { version = "0.8.0", features = ["runtime-tokio", "tls-rustls", "mysql"],
 chrono = { version = "0.4", features = ["serde"], optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 
